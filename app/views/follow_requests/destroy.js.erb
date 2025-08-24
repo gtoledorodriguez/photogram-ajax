@@ -1,0 +1,2 @@
+console.log("Unfollow")
+$("#<%= dom_id(@follow_request.recipient) %>_follow_unfollow").html("<%= j( render('follow_requests/follow_unfollow', sender: current_user, recipient: @follow_request.recipient) ) %>");
